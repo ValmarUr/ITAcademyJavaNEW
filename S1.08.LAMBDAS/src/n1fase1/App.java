@@ -11,6 +11,7 @@
 
 package n1fase1;
 
+
 public class App {
 	
 	Llistes ll = new Llistes();
@@ -33,6 +34,7 @@ public class App {
 		
 		System.out.println("---Ex1---");
 		l.lambdaEx1(ll.llistaEx1).forEach(s -> System.out.println(s));
+		
 	}
 	
 	private void ex2() {

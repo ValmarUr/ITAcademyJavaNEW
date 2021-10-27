@@ -17,7 +17,7 @@ public class App {
 		
 		I01_FunctionalInterface cadenaInreves = (s) -> new StringBuilder(s).reverse().toString();
 		
-		String resultat = cadenaInreves.reverse("Tagamanen");
+		String resultat = cadenaInreves.reverse("tagamanen");
 		
 		System.out.println(resultat);
 	}

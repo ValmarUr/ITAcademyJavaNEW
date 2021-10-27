@@ -1,3 +1,14 @@
+/*
+ * 	IT ACADEMY : ITINERARI JAVA
+ * 
+ * 		SPRINT 1.Java Bàsics
+ * 		Tasca S1.08.Lambdes
+ * 		Nivell 3 
+ * 
+ * 		ALUMNE: Juan Emilio Fernández Reinaldos
+ * 		
+ */
+
 package n3;
 
 import java.util.ArrayList;
