@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "fa7ae9e0-5e1c-425a-bc0b-0306a6c8d207",
+		"name": "S5.01.n1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "{{IP}}:{{port}}/api/{{version}}/shops",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \r\n    \"name\":\"White Collar\",\r\n    \"maxCapacity\":\"4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{IP}}:{{port}}/api/{{version}}/shops",
+					"host": [
+						"{{IP}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"{{version}}",
+						"shops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{IP}}:{{port}}/api/{{version}}/shops",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{IP}}:{{port}}/api/{{version}}/shops",
+					"host": [
+						"{{IP}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"{{version}}",
+						"shops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{IP}}:{{port}}/api/{{version}}/shops/:id/pictures",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"author\":\"Magritte\",\r\n    \"title\":\"El beso\",\r\n    \"price\":\"1000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{IP}}:{{port}}/api/{{version}}/shops/:id/pictures",
+					"host": [
+						"{{IP}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"{{version}}",
+						"shops",
+						":id",
+						"pictures"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{IP}}:{{port}}/api/{{version}}/shops/:id/pictures",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{IP}}:{{port}}/api/{{version}}/shops/:id/pictures",
+					"host": [
+						"{{IP}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"{{version}}",
+						"shops",
+						":id",
+						"pictures"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{IP}}:{{port}}/api/{{version}}/shops/:id/pictures",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{IP}}:{{port}}/api/{{version}}/shops/:id/pictures",
+					"host": [
+						"{{IP}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"{{version}}",
+						"shops",
+						":id",
+						"pictures"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "version",
+			"value": "v1",
+			"type": "string"
+		}
+	]
+}
